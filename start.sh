@@ -10,14 +10,31 @@ blue='\033[0;34m'
 magenta='\033[0;35m'
 cyan='\033[0;36m'
 
+# Helper functions
+# Append to .profile...
+
+# Create code location
+CODE_DIRECTORY=~/code
+if [ ! -d "$CODE_DIRECTORY" ]; then
+  mkdir ~/code
+fi
+
+# Update .profile with PS1, SUDO_PS1, PATH, COLORS and GIT BRANCH
+# ...
+
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install CLI Apps
+brew install leiningen
 brew install go
+# Add profile vars and update path
+brew install awscli
 brew install httpd24
 brew install memcached
+# Add command alias to start and stop
 brew install mysql
+# Add command alias to start and stop
 brew install nginx
 brew install node
 brew install php54
