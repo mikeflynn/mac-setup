@@ -12,4 +12,6 @@ This script uses:
 
 ## Usage
 
+Open a terminal window and run the following:
+
 `bash <(curl -s https://raw.githubusercontent.com/mikeflynn/mac-setup/master/start.sh)`
