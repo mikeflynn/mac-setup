@@ -9,3 +9,7 @@ This script uses:
 * [Hombrew](http://brew.sh/)
 
 * [Homebrew Cask](http://caskroom.io/)
+
+## Usage
+
+`bash <(curl -s https://raw.githubusercontent.com/mikeflynn/mac-setup/master/start.sh)`
